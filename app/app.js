@@ -7,13 +7,11 @@ function updateProgress() {
         progress++;
         percentageText.textContent = `${progress}%`;
         const angle = (progress / 100) * 360;
-        circle.style.background = `conic-gradient(#4caf50 ${angle}deg, #333 ${angle}deg)`;
+        circle.style.background = `conic-gradient(#00bcd4 ${angle}deg, transparent ${angle}deg)`;
     } else {
         clearInterval(progressInterval);
-        // Redirecionar para o site após o carregamento (opcional)
-        // window.location.href = "index.html";
     }
 }
 
-// Iniciar a animação
+// Iniciar a animação de progresso
 const progressInterval = setInterval(updateProgress, 30); // Aumenta a porcentagem a cada 30ms
