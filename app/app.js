@@ -8,7 +8,12 @@ function updateProgress() {
         progress++;
         percentageText.textContent = `${progress}%`;
         const angle = (progress / 100) * 360;
-        circle.style.background = `conic-gradient(#00bcd4 ${angle}deg, transparent ${angle}deg)`;
+
+        // Mudar a cor do círculo de azul para vermelho conforme o progresso
+        circle.style.background = `conic-gradient(
+            #00bcd4 0deg ${angle}deg,  /* cor azul */
+            #ff0000 ${angle}deg 360deg  /* cor vermelha após o azul */
+        )`;
     } else {
         clearInterval(progressInterval);
         // Quando atingir 100%, esconder o círculo e mostrar o conteúdo

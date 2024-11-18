@@ -1,4 +1,3 @@
-/* Reset de margin e padding */
 * {
     margin: 0;
     padding: 0;
@@ -26,50 +25,40 @@ body, html {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(0, 0, 0, 0.8) 50%, rgba(0, 255, 255, 0.1) 100%);
+    background: conic-gradient(
+        #00bcd4 0deg,  /* cor azul */
+        #ff0000 0deg  /* cor vermelha (no final) */
+    );
     border: 8px solid transparent;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.6), 0 0 60px rgba(0, 255, 255, 0.4);
-    animation: pulse 1.5s ease-in-out infinite;
-}
-
-.circle:before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    background: conic-gradient(#00bcd4 0%, #00bcd4 0%, transparent 0%);
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    animation: rotate-circle 2s linear infinite;
 }
 
 #percentage {
-    color: #00bcd4;
+    color: white;
     font-size: 28px;
     font-weight: bold;
-    position: absolute;
-    z-index: 2;
+    z-index: 1;  /* Coloca o texto acima do círculo */
 }
 
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-        box-shadow: 0 0 20px rgba(0, 255, 255, 0.6), 0 0 60px rgba(0, 255, 255, 0.4);
-    }
-    50% {
-        transform: scale(1.1);
-        box-shadow: 0 0 30px rgba(0, 255, 255, 0.8), 0 0 100px rgba(0, 255, 255, 0.6);
-    }
-    100% {
-        transform: scale(1);
-        box-shadow: 0 0 20px rgba(0, 255, 255, 0.6), 0 0 60px rgba(0, 255, 255, 0.4);
-    }
+.Areaprincipal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+}
+
+.AreaEmDesenvolvimento h1, .AreaEmDesenvolvimento p {
+    font-size: 18px;
+    color: #fff;
 }
 
 @keyframes rotate-circle {
@@ -80,7 +69,6 @@ body, html {
         transform: rotate(360deg);
     }
 }
-
 
 /* -------------------------------- Area ainda Não desenvolvida (Apagar essa area Quando começar a criar esta pagina) -------------*/
 .Areaprincipal {
