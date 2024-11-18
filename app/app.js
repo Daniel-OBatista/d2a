@@ -1,7 +1,7 @@
 let progress = 0;
 const circle = document.getElementById('progress-circle');
 const percentageText = document.getElementById('percentage');
-const body = document.body;  // Referência ao body para manipulação após o carregamento
+const mainContent = document.getElementById('main-content');  // Referência ao conteúdo principal
 
 function updateProgress() {
     if (progress < 100) {
@@ -14,9 +14,8 @@ function updateProgress() {
         // Quando atingir 100%, esconder o círculo e mostrar o conteúdo
         setTimeout(() => {
             circle.style.display = 'none';  // Esconde o círculo
-            body.style.backgroundColor = '#fff';  // Opcional: mude o fundo da página
-            body.style.transition = 'background-color 1s';  // Transição suave de fundo
-            // Aqui você pode fazer mais ajustes, como exibir uma mensagem ou redirecionar para outra página.
+            mainContent.style.display = 'block';  // Exibe o conteúdo principal
+            document.body.style.backgroundColor = '#fff';  // Altere o fundo para indicar que a página carregou
         }, 500);  // Atraso para a animação de desaparecimento do círculo
     }
 }

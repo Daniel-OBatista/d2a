@@ -10,7 +10,7 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #121212; /* Fundo escuro (tecnológico) */
+    background-color: #121212;
     font-family: 'Arial', sans-serif;
 }
 
@@ -81,12 +81,8 @@ body, html {
     }
 }
 
+
 /* -------------------------------- Area ainda Não desenvolvida (Apagar essa area Quando começar a criar esta pagina) -------------*/
-
-
-
-
-
 .Areaprincipal {
     font-family: Arial, sans-serif;
     background-color: #333;
