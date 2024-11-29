@@ -1,0 +1,112 @@
+/* Reset de margin e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: conic-gradient(#00bcd4 0%, transparent 0%);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+.circle:before {
+    content: '';
+    position: absolute;
+    width: 180px; /* Ajuste para criar a borda interna */
+    height: 180px;
+    background: #121212;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+#percentage {
+    color: #00bcd4;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    z-index: 2;
+}
+
+/* Animação do preenchimento do círculo */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 20px rgba(0, 255, 255, 0.6), 0 0 60px rgba(0, 255, 255, 0.4);
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 30px rgba(0, 255, 255, 0.8), 0 0 100px rgba(0, 255, 255, 0.6);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 20px rgba(0, 255, 255, 0.6), 0 0 60px rgba(0, 255, 255, 0.4);
+    }
+}
+
+@keyframes rotate-circle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Área ainda não desenvolvida */
+.Areaprincipal {
+    padding-top: 30%;
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.AreaEmDesenvolvimento {
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+    background: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    border: 1px solid #6e6e6e;
+}
+
+.AreaEmDesenvolvimento h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #6e6e6e;
+}
+
+.AreaEmDesenvolvimento p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
