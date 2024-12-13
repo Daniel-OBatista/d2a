@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-body, html {
+body {
     height: 100%;
     display: flex;
     justify-content: center;
@@ -74,39 +74,4 @@ body, html {
     100% {
         transform: rotate(360deg);
     }
-}
-
-/* Área ainda não desenvolvida */
-.Areaprincipal {
-    padding-top: 30%;
-    font-family: Arial, sans-serif;
-    background-color: #333;
-    color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.AreaEmDesenvolvimento {
-    text-align: center;
-    max-width: 600px;
-    padding: 20px;
-    background: #1e1e1e;
-    border-radius: 10px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
-    border: 1px solid #6e6e6e;
-}
-
-.AreaEmDesenvolvimento h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    font-weight: bold;
-    color: #6e6e6e;
-}
-
-.AreaEmDesenvolvimento p {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-    line-height: 1.5;
 }
