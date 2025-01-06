@@ -15,6 +15,7 @@ body {
     justify-content: center;  /* Centraliza o conteúdo horizontalmente */
     align-items: center;      /* Centraliza o conteúdo verticalmente */
     background-color: var(--background-inicio);
+    overflow: hidden; /* Impede o conteúdo de sair da tela */
 }
 
 .container {
@@ -23,11 +24,13 @@ body {
     align-items: center;
     flex-direction: column;   /* Centraliza o conteúdo em coluna */
     text-align: center;       /* Centraliza o texto dentro do container */
+    width: 100%;              /* Faz o container ocupar 100% da largura */
+    height: 100%;             /* Faz o container ocupar 100% da altura */
 }
 
 .circle {
-    width: 200px;             /* Tamanho do círculo */
-    height: 200px;            /* Tamanho do círculo */
+    width: 40vmin;             /* Ajusta o tamanho com base no viewport */
+    height: 40vmin;            /* Mantém a proporção do círculo */
     border-radius: 50%;       /* Faz o círculo */
     background: conic-gradient(var(--animacao-inicio) 0%, transparent 0%);
     position: relative;
@@ -40,8 +43,8 @@ body {
 .circle:before {
     content: '';
     position: absolute;
-    width: 180px;
-    height: 180px;
+    width: 90%;  /* Usa porcentagem para ajustar com base no círculo */
+    height: 90%;  /* Usa porcentagem para ajustar com base no círculo */
     background: #121212; /* Cor de fundo do círculo */
     border-radius: 50%;
     z-index: 1;
