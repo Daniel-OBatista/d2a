@@ -4,7 +4,7 @@ const percentageText = document.getElementById('percentage');
 const mainContent = document.getElementById('main-content'); // Referência ao conteúdo principal
 
 // Define o fundo da página como preto
-document.body.style.backgroundColor = '#505A5E'; // Cinza escuro
+document.body.style.backgroundColor = '#1a1f20'; // Cinza escuro
 
 function updateProgress() {
     if (progress < 100) {
