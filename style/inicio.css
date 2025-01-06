@@ -1,10 +1,3 @@
-/* Reset de margin e padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 :root {
     --animacao-inicio: #00bcd4;
     --background-inicio:  #e0e6e8;
@@ -82,6 +75,18 @@ body {
     }
     100% {
         transform: rotate(360deg);
+    }
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+    #progress-circle {
+        width: 120px;      /* Ajusta o tamanho do círculo para dispositivos menores */
+        height: 120px;     /* Ajusta o tamanho do círculo para dispositivos menores */
+    }
+
+    #percentage {
+        font-size: 1.5rem; /* Ajusta o tamanho da fonte para dispositivos menores */
     }
 }
 
