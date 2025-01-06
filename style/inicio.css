@@ -78,18 +78,6 @@ body {
     }
 }
 
-/* Ajuste para telas menores */
-@media (max-width: 768px) {
-    #progress-circle {
-        width: 120px;      /* Ajusta o tamanho do círculo para dispositivos menores */
-        height: 120px;     /* Ajusta o tamanho do círculo para dispositivos menores */
-    }
-
-    #percentage {
-        font-size: 1.5rem; /* Ajusta o tamanho da fonte para dispositivos menores */
-    }
-}
-
 .area_principal {
     width: 100%;
     display: flex;
