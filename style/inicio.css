@@ -20,7 +20,6 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #121212; /* Adicionando um fundo para garantir visibilidade */
 }
 
 .container {
@@ -92,3 +91,12 @@ body, html {
     align-items: center;
     background-color: #00bcd4;
 }
+
+[data-bs-theme="dark"] {
+    color: white;
+    .container-fluid {
+        color: white;
+    }
+  }
+
+  
