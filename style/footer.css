@@ -6,17 +6,22 @@ html, body {
     flex-direction: column;  /* Organiza os elementos verticalmente */
 }
 
-/* O conteúdo principal deve ocupar o espaço disponível */
-.area_principal {
-    flex: 1;  /* Faz o conteúdo principal ocupar o espaço restante */
-    padding: 20px;  /* Ajuste do espaçamento interno, se necessário */
-}
-
-/* Estilos para o footer */
 footer {
-    width: 100%;
+    width: 100%; /* Ajusta o width ao conteúdo do footer */
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 0;  /* Ajusta o padding para reduzir a altura */
+    margin-top: auto;  /* Faz com que o footer vá para o final da página */
+}
+
+footer .btn {
+    color: white;
+    font-size: 18px; /* Ajuste o tamanho dos ícones */
+    margin: 0 10px; /* Dá um pequeno espaço entre os ícones */
+}
+
+footer .p-3 {
+    font-size: 12px; /* Diminui o tamanho do texto */
+    margin-top: 0; /* Espaço entre o texto e os ícones */
 }

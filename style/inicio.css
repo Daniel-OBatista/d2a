@@ -5,13 +5,18 @@
     box-sizing: border-box;
 }
 
+:root {
+    --marrom-claro: #B29463;
+    --animacao-inicio: #00bcd4;
+}
+
 body, html {
+    font-family: 'Barlow', sans-serif;
     width: 100%;
-    height: 100%;
+    height: 4000vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #121212;
     font-family: 'Arial', sans-serif;
     display: flex;
     flex-direction: column; /* Organiza os filhos em coluna */
@@ -28,7 +33,7 @@ body, html {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background: conic-gradient(#00bcd4 0%, transparent 0%);
+    background: conic-gradient(var(--animacao-inicio) 0%, transparent 0%);
     position: relative;
     display: flex;
     justify-content: center;
@@ -47,7 +52,7 @@ body, html {
 }
 
 #percentage {
-    color: #00bcd4;
+    color: var(--animacao-inicio);
     font-size: 28px;
     font-weight: bold;
     position: absolute;
