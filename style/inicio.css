@@ -1,6 +1,6 @@
 :root {
     --animacao-inicio: #00bcd4;
-    --background-inicio:  #e0e6e8;
+    --background-inicio: #e0e6e8;
 }
 
 /* Importação da fonte Barlow */
@@ -9,10 +9,11 @@
 body {
     font-family: 'Barlow', sans-serif;
     width: 100%;
-    min-height: 100vh; /* Altera de 4000vh para garantir que a página tenha altura mínima da tela */
+    min-height: 100vh; /* Garante que a altura seja no mínimo 100% da tela */
+    margin: 0; /* Remove margens padrão */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center;  /* Centraliza o conteúdo horizontalmente */
+    align-items: center;      /* Centraliza o conteúdo verticalmente */
     background-color: var(--background-inicio);
 }
 
@@ -20,13 +21,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    flex-direction: column;   /* Centraliza o conteúdo em coluna */
+    text-align: center;       /* Centraliza o texto dentro do container */
 }
 
 .circle {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+    width: 200px;             /* Tamanho do círculo */
+    height: 200px;            /* Tamanho do círculo */
+    border-radius: 50%;       /* Faz o círculo */
     background: conic-gradient(var(--animacao-inicio) 0%, transparent 0%);
     position: relative;
     display: flex;
@@ -40,7 +42,7 @@ body {
     position: absolute;
     width: 180px;
     height: 180px;
-    background: #121212;
+    background: #121212; /* Cor de fundo do círculo */
     border-radius: 50%;
     z-index: 1;
 }
