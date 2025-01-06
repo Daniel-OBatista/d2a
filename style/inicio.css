@@ -16,6 +16,7 @@ body {
     align-items: center;      /* Centraliza o conteúdo verticalmente */
     background-color: var(--background-inicio);
     overflow: hidden; /* Impede o conteúdo de sair da tela */
+    padding: 5% 0 0 0;
 }
 
 .container {
