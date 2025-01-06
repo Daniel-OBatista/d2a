@@ -16,7 +16,7 @@ body {
     align-items: center;      /* Centraliza o conteúdo verticalmente */
     background-color: var(--background-inicio);
     overflow: hidden; /* Impede o conteúdo de sair da tela */
-    padding: 5% 0 0 0;
+    padding: 10% 0 0 0;
 }
 
 .container {
@@ -93,8 +93,12 @@ body {
 }
 
 /* Ajuste para telas menores que 800px */
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     #percentage {
         font-size: 20px;  /* Diminui o tamanho da fonte em telas menores */
+    }
+
+    .container {
+        padding: 10% 0;  /* Diminui o padding em telas menores */
     }
 }
