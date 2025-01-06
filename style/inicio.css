@@ -29,8 +29,8 @@ body {
 }
 
 .circle {
-    width: 20vmin;             /* Ajusta o tamanho com base no viewport */
-    height: 20vmin;            /* Mantém a proporção do círculo */
+    width: 15vmin;             /* Ajusta o tamanho com base no viewport */
+    height: 15vmin;            /* Mantém a proporção do círculo */
     border-radius: 50%;       /* Faz o círculo */
     background: conic-gradient(var(--animacao-inicio) 0%, transparent 0%);
     position: relative;
