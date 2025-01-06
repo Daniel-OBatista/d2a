@@ -9,6 +9,7 @@
 body {
     font-family: 'Barlow', sans-serif;
     width: 100%;
+    min-height: 100%; /* Garante que a altura seja no mínimo 100% da tela */
     margin: 0; /* Remove margens padrão */
     display: flex;
     justify-content: center;  /* Centraliza o conteúdo horizontalmente */
