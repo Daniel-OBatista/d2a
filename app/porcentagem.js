@@ -15,7 +15,7 @@ function updateProgress() {
         clearInterval(progressInterval);
         // Quando atingir 100%, redirecione para outra página
         setTimeout(() => {
-            window.location.href = 'inicio.html'; // Redireciona para a página principal
+            window.location.href = 'home.html'; // Redireciona para a página principal
         }, 500); // Atraso para uma melhor transição
     }
 }

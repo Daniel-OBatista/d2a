@@ -10,16 +10,17 @@
     --animacao-inicio: #00bcd4;
 }
 
+/* Importação da fonte Barlow */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap');
+
 body, html {
     font-family: 'Barlow', sans-serif;
     width: 100%;
-    height: 4000vh;
+    min-height: 100vh; /* Altera de 4000vh para garantir que a página tenha altura mínima da tela */
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Arial', sans-serif;
-    display: flex;
-    flex-direction: column; /* Organiza os filhos em coluna */
+    background-color: #121212; /* Adicionando um fundo para garantir visibilidade */
 }
 
 .container {
@@ -44,7 +45,7 @@ body, html {
 .circle:before {
     content: '';
     position: absolute;
-    width: 180px; /* Ajuste para criar a borda interna */
+    width: 180px;
     height: 180px;
     background: #121212;
     border-radius: 50%;
@@ -87,7 +88,7 @@ body, html {
 .area_principal {
     width: 100%;
     display: flex;
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    align-items: center; /* Centraliza o conteúdo verticalmente */
+    justify-content: center;
+    align-items: center;
     background-color: #00bcd4;
 }
