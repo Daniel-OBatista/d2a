@@ -1,9 +1,10 @@
-//Script para exibir o carregamento no inicio da página
-
 let progress = 0;
 const circle = document.getElementById('progress-circle');
 const percentageText = document.getElementById('percentage');
 const mainContent = document.getElementById('main-content'); // Referência ao conteúdo principal
+
+// Define o fundo da página como preto
+document.body.style.backgroundColor = '#333333'; // Cinza escuro
 
 function updateProgress() {
     if (progress < 100) {

@@ -6,20 +6,21 @@
 }
 
 :root {
-    --marrom-claro: #B29463;
     --animacao-inicio: #00bcd4;
+    --background-inicio:  #e0e6e8;
 }
 
 /* Importação da fonte Barlow */
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap');
 
-body, html {
+body {
     font-family: 'Barlow', sans-serif;
     width: 100%;
     min-height: 100vh; /* Altera de 4000vh para garantir que a página tenha altura mínima da tela */
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--background-inicio);
 }
 
 .container {
@@ -91,12 +92,3 @@ body, html {
     align-items: center;
     background-color: #00bcd4;
 }
-
-[data-bs-theme="dark"] {
-    color: white;
-    .container-fluid {
-        color: white;
-    }
-  }
-
-  

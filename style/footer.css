@@ -1,5 +1,5 @@
 /* Garantir que o corpo ocupe toda a altura da tela */
-html, body {
+body {
     height: 100%;  /* O corpo ocupa 100% da altura da tela */
     margin: 0;  /* Remove a margem padrão */
     display: flex;
