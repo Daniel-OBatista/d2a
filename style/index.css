@@ -82,3 +82,14 @@ body {
         transform: rotate(360deg);
     }
 }
+
+/* Ajuste para telas menores que 800px */
+@media (max-width: 1000px) {
+    #percentage {
+        font-size: 20px;  /* Diminui o tamanho da fonte em telas menores */
+    }
+
+    .container {
+        padding: 20% 0;  /* Diminui o padding em telas menores */
+    }
+}
