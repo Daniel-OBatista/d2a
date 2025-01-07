@@ -27,13 +27,13 @@ body {
     height: 100%;             /* Faz o container ocupar 100% da altura */
 }
 
-.section_1 {
+.section_um {
     padding-top: 7%;
 }
 
 /* Ajustes para telas menores que 800px */
-@media (max-width: 800px) {
-    .section_1 {
+@media (max-width: 1000px) {
+    .section_um {
         padding-top: 25%;
     }
 }
