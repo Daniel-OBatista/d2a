@@ -57,7 +57,7 @@ footer .p-3 {
 /* Ajustes para telas menores que 800px */
 @media (max-width: 800px) {
     .section_1 {
-        padding-top: 10%;
+        padding-top: 15%;
     }
 
     footer {
