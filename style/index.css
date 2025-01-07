@@ -1,0 +1,84 @@
+:root {
+    --animacao-inicio: #00bcd4;
+    --background-inicio: #e0e6e8;
+}
+
+/* Importação da fonte Barlow */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap');
+
+body {
+    font-family: 'Barlow', sans-serif;
+    width: 100%;
+    min-height: 80vh; /* Garante que a altura seja no mínimo 100% da tela */
+    margin: 0; /* Remove margens padrão */
+    display: flex;
+    justify-content: center;  /* Centraliza o conteúdo horizontalmente */
+    align-items: center;      /* Centraliza o conteúdo verticalmente */
+    background-color: var(--background-inicio);
+    overflow: hidden; /* Impede o conteúdo de sair da tela */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;   /* Centraliza o conteúdo em coluna */
+    text-align: center;       /* Centraliza o texto dentro do container */
+    width: 100%;              /* Faz o container ocupar 100% da largura */
+    height: 100%;             /* Faz o container ocupar 100% da altura */
+}
+
+.circle {
+    width: 20vmin;             /* Ajusta o tamanho com base no viewport */
+    height: 20vmin;            /* Mantém a proporção do círculo */
+    border-radius: 50%;       /* Faz o círculo */
+    background: conic-gradient(var(--animacao-inicio) 0%, transparent 0%);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+.circle:before {
+    content: '';
+    position: absolute;
+    width: 90%;  /* Usa porcentagem para ajustar com base no círculo */
+    height: 90%;  /* Usa porcentagem para ajustar com base no círculo */
+    background: #121212; /* Cor de fundo do círculo */
+    border-radius: 50%;
+    z-index: 1;
+}
+
+#percentage {
+    color: var(--animacao-inicio);
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    z-index: 2;
+}
+
+/* Animação do preenchimento do círculo */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 20px rgba(0, 255, 255, 0.6), 0 0 60px rgba(0, 255, 255, 0.4);
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 30px rgba(0, 255, 255, 0.8), 0 0 100px rgba(0, 255, 255, 0.6);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 20px rgba(0, 255, 255, 0.6), 0 0 60px rgba(0, 255, 255, 0.4);
+    }
+}
+
+@keyframes rotate-circle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

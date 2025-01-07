@@ -99,6 +99,6 @@ body {
     }
 
     .container {
-        padding: 10% 0;  /* Diminui o padding em telas menores */
+        padding: 20% 0;  /* Diminui o padding em telas menores */
     }
 }
