@@ -31,9 +31,16 @@ body {
     padding-top: 7%;
 }
 
-/* Ajustes para telas menores que 800px */
-@media (max-width: 1000px) {
+/* Ajustes para telas menores que 1000px */
+@media (max-width: 1200px) {
     .section_um {
-        padding-top: 25%;
+        padding-top: 10%;
+    }
+}
+
+/* Ajustes para telas menores que 1000px */
+@media (max-width: 800px) {
+    .section_um {
+        padding-top: 30%;
     }
 }
